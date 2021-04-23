@@ -32,4 +32,3 @@ else:
     print(name + " asks: " + question)
 
 print ("Magic 8_Balls answer: " + answer)
-
