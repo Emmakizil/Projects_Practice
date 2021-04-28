@@ -2,7 +2,8 @@
 determine the cheapest way to ship that package using Sal’s Shippers.
 more details -> codecademy/workflow projects
 '''
-weight = 1.5
+weight = int(input("Enter your package weight: "))
+
 # Ground Shipping
 if weight <= 2:
   cost_ground = weight * 1.5 + 20
@@ -18,10 +19,15 @@ cost_premium = 125.00
 
 # Drone Shipping
 if weight <= 2:
-  cost_premium = weight * 4.50
+  drone_premium = weight * 4.50
 elif weight <= 6:
-  cost_premium = weight * 9.00
+  drone_premium = weight * 9.00
 elif weight <= 10:
-  cost_premium = weight * 12.00
+  drone_premium = weight * 12.00
 else:
-  cost_premium = weight * 14.25
+  drone_premium = weight * 14.25
+
+
+print("Ground shipping cost for your package would be " + "$" + str(cost_ground))
+print("Premium shipping cost for all packages is " + "$" + str(cost_premium))
+print("Drone shipping cost for your package would be " + "$" + str(drone_premium))
