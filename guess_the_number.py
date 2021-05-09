@@ -1,3 +1,4 @@
+#Computer has a secrect number and you should guess the number
 import random
 def guess(number):
     random_number = random.randint(1, number)
@@ -13,3 +14,4 @@ def guess(number):
             break;
 
 guess(10)
+
